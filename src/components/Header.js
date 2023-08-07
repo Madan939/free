@@ -21,6 +21,9 @@ const Header = () => {
                 <NavLink className="nav-link text-light" to="/product">Product</NavLink>
               </li>
               <li className="nav-item">
+                <NavLink className="nav-link text-light" aria-current="page" to="/Cart">Cart</NavLink>
+              </li>
+              <li className="nav-item">
                 <NavLink className="nav-link text-light " aria-disabled="true" to="/contact">Contact</NavLink>
               </li>
               <li className="dropdown ">

@@ -4,7 +4,7 @@ import {Allroute} from './route/Allroute'
 function App() {
   return (
     < >
-      <Header />
+      <Header/>
       <Allroute/>
      <Footer/>
     </>

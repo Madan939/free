@@ -1,6 +1,6 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
-import { Contact, Home, Product,} from '../pages'
+import { Cart, Contact, Home, Product,} from '../pages'
 
  export const Allroute = () => {
   return (
@@ -8,7 +8,7 @@ import { Contact, Home, Product,} from '../pages'
       <Route path="/" element={<Home/>}></Route>
       <Route path="/Product" element={<Product/>}></Route>
       <Route path="/Contact" element={<Contact/>}></Route>
-
+      <Route path="/Cart" element={<Cart/>}></Route>
     </Routes>
   )
 }
