@@ -12,11 +12,11 @@ const Home = () => {
   //   {id:2,name:"Hoodie",img:p3},
   //   {id:3,name:"T-shirt",img:p4},
   // ]
-const products=[
-  {id:1,name:"Trousers",price:1300,img:"/assests/p2.jpg"},
-  {id:2,name:"T-shirt",price:1000,img:"/assests/p3.jpg"},
-  {id:1,name:"Hoodie",price:1200,img:"/assests/p4.jpg"},
-]
+  const products = [
+    { id: 1, name: "Trousers", price: 1300, img: "/assests/p2.jpg" },
+    { id: 2, name: "T-shirt", price: 1000, img: "/assests/p3.jpg" },
+    { id: 3, name: "Hoodie", price: 1200, img: "/assests/p4.jpg" },
+  ]
   return (
     <>
       <div id="carouselExampleAutoplaying" className="carousel slide bg-secondary" data-bs-ride="carousel">
@@ -43,10 +43,10 @@ const products=[
       <div className='card mt-4 mb-2 bg-body-secondary'>
         <p className='h3 text-center text-light bg-danger'>Feature Product</p>
         <div className='row  w-100'>
-           {products.map((item)=>(
-             <Card key={item.id} item={item}/>
-        ))}
-        {/* <div className='col-8 col-md-3 m-auto mb-2 mt-2'>
+          {products.map((item) => (
+            <Card key={item.id} item={item} />
+          ))}
+          {/* <div className='col-8 col-md-3 m-auto mb-2 mt-2'>
              <div class="card ">
                <img src={item.img} class="card-img-top " alt="" />
                <div class="card-body d-flex flex-column align-items-center">
@@ -54,8 +54,8 @@ const products=[
                  <p class="btn btn-primary">Add to cart</p>
                </div>
              </div> */}
-           </div>
-          {/* <div className='col-8 col-md-3 m-auto mb-2 mt-2'>
+        </div>
+        {/* <div className='col-8 col-md-3 m-auto mb-2 mt-2'>
             <div class="card ">
               <img src={p2} class="card-img-top " alt="" />
               <div class="card-body">
@@ -79,7 +79,7 @@ const products=[
               </div>
             </div>
           </div> */}
-        </div>
+      </div>
     </>
   )
 }

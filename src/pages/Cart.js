@@ -1,7 +1,10 @@
 import React from 'react'
 import { Addtocart } from '../components'
+import { Usecart } from '../components/context/CartContext'
 
 const Cart = () => {
+    const { total } = Usecart()
+    console.log(total)
     const products = [
         { id: 1, name: "Bottle", price: 500, img: "/assests/f1.jpg" },
         { id: 2, name: "Headphone", price: 1000, img: "/assests/f2.jpg" },

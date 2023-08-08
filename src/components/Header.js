@@ -33,16 +33,16 @@ const Header = () => {
                 <form className="dropdown-menu p-3 m-10">
                   <div className="mb-3 form-floating">
                     <input type="email" className="form-control" id="email" placeholder="enter your email" />
-                    <label for="email" className="form-label">Email</label>
+                    <label htmlFor="email" className="form-label">Email</label>
                   </div>
                   <div className="mb-3 form-floating">
                     <input type="password" className="form-control" id="exampleDropdownFormPassword2" placeholder="Password" />
-                    <label for="exampleDropdownFormPassword2" className="form-label">Password</label>
+                    <label htmlFor="exampleDropdownFormPassword2" className="form-label">Password</label>
                   </div>
                   <div className="mb-3">
                     <div className="form-check">
                       <input type="checkbox" className="form-check-input" id="dropdownCheck2" />
-                      <label className="form-check-label" for="dropdownCheck2">
+                      <label className="form-check-label" htmlFor="dropdownCheck2">
                         Remember me
                       </label>
                     </div>
