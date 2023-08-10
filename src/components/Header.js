@@ -1,7 +1,9 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import logo from "./images/logo.png"
+import { Usecart } from './context/CartContext'
 const Header = () => {
+  const {cartlist } = Usecart()
   return (
     <header>
       <nav className="navbar navbar-expand-lg bg-dark">
@@ -55,7 +57,12 @@ const Header = () => {
               </li>
             </ul>
 
-            <form className="d-flex" role="search">
+            <i className="fa-sharp fa-solid fa-cart-shopping " style={{color:"white"}}>
+              <p className=" top-0 start-100 translate-middle badge m-1 rounded-pill bg-danger">
+               {cartlist.length} 
+              </p>
+            </i>
+            <form className="d-flex m-1" role="search">
               <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
               <button className=" btn btn-success text-light " type="submit">Search</button>
             </form>
