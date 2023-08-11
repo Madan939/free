@@ -28,8 +28,8 @@ const Cart = () => {
                     </tr>
                 </thead>
                 <tbody>
-                    {cartlist.map((item) => (
-                        <Addtocart key={item.id} item={item} />
+                    {cartlist.map((item,idx) => (
+                        <Addtocart key={item.id} item={item} idx={idx} />
                     ))}
 
                 </tbody>

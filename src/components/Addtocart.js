@@ -1,13 +1,13 @@
 import React from 'react'
 import { Usecart } from './context/CartContext'
 
-const Addtocart = ({ item }) => {
+const Addtocart = ({ item,idx }) => {
   const { removefromcart } = Usecart()
-  const { id, img, name, price } = item
+  const { img, name, price } = item
   return (
     <>
-      <tr className=''>
-        <td className='text-center'>{id}</td>
+      <tr>
+        <td className='text-center'>{idx+1}</td>
         <td className='text-center'>{name}</td>
         <td className='text-center'>Rs.{price}</td>
         <td className='text-center'><img src={img} className='image' alt="" /></td>
